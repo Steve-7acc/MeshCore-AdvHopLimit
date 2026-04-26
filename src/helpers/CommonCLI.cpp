@@ -179,7 +179,7 @@ void CommonCLI::savePrefs(FILESYSTEM* fs) {
     file.write((uint8_t *)&_prefs->adc_multiplier, sizeof(_prefs->adc_multiplier));                 // 166
     file.write((uint8_t *)_prefs->owner_info, sizeof(_prefs->owner_info));                          // 170
     file.write((uint8_t *)&_prefs->rx_boosted_gain, sizeof(_prefs->rx_boosted_gain));              // 290
-    file.write((uint8_t *)&_prefs->advert_max_hops, sizeof(_prefs->advert_max_hops                 // 291
+    file.write((uint8_t *)&_prefs->advert_max_hops, sizeof(_prefs->advert_max_hops));               // 291
 
     file.close();
   }
